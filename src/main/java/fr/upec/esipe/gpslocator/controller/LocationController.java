@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import fr.upec.esipe.gpslocator.model.Location;
 import fr.upec.esipe.gpslocator.service.LocationService;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/location")
 public class LocationController {
@@ -21,6 +23,11 @@ public class LocationController {
 	@PostMapping(value = "/")
 	public Location setLocation(@RequestBody Location location) {
         return locationService.setLocation(location);
+    }
+
+    @GetMapping(value = "/")
+    public List<Location> getAll() {
+	    return locationService.getAll();
     }
 	
 }
