@@ -3,11 +3,11 @@ package fr.upec.esipe.gpslocator.model;
 public class Location {
 
 	private String id;
-	private Long altitude;
-	private Long latitude;
-	private Long longitude;
+	private double altitude;
+	private double latitude;
+	private double longitude;
 	
-	public Location(Long altitude, Long latitude, Long longitude, String id) {
+	public Location(double altitude, double latitude, double longitude, String id) {
 		super();
 		this.altitude = altitude;
 		this.latitude = latitude;
@@ -21,27 +21,27 @@ public class Location {
 
 	public Location() {}
 
-	public Long getAltitude() {
+	public double getAltitude() {
 		return altitude;
 	}
 
-	public void setAltitude(Long altitude) {
+	public void setAltitude(double altitude) {
 		this.altitude = altitude;
 	}
 
-	public Long getLatitude() {
+	public double getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(Long latitude) {
+	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
 
-	public Long getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
 
-	public void setLongitude(Long longitude) {
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
 
