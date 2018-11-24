@@ -17,7 +17,7 @@ public class LocationWSController {
 
     @MessageMapping("/locations")
     @SendTo("/topic/locations")
-    public List<Location> getAll() {
+    public List<Location> getAll(String message) {
         return service.getAll();
     }
 
