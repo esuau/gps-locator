@@ -1,8 +1,5 @@
 package fr.upec.esipe.gpslocator.model;
 
-import java.util.UUID;
-
-
 public class Location {
 
 	private String id;
@@ -10,7 +7,7 @@ public class Location {
 	private Long latitude;
 	private Long longitude;
 	
-	public Location(Long altitude, Long latitude, Long longitude,String id) {
+	public Location(Long altitude, Long latitude, Long longitude, String id) {
 		super();
 		this.altitude = altitude;
 		this.latitude = latitude;
